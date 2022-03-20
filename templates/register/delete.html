@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+       <style>
+        button {
+  border: none;
+  color:red;
+  padding: 10px 32px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+p{
+font-size:30px
+}
+
+.button {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+ body{
+        background:
+        url(https://images.unsplash.com/photo-1523378759295-3a7b309ca5fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80)
+        }
+        .btn{
+    position: fixed; /* or position: absolute; */
+    top: 15;
+    right: 10;
+    </style>
+
+</head>
+<body>
+<center><h1>{{title }}</h1>
+<form method="post">{%csrf_token %}
+<!--    {{form.as_p}}-->
+     <label for="sname"><b>Student Name:</b></label><br>
+    <input type="text" id="sname" name="sname" required><br><br>
+
+    <button class="button button">Delete</button>
+
+</form>
+</center>
+<center><a class="btn btn-primary btn-lg" href="/index" role="button">back to home</a></center>
+</body>
+</html>

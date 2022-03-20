@@ -1,0 +1,22 @@
+.jumbotron{
+    color:red;
+    background:Lig;
+    margin-top:100px;
+    border:2px solid Tomato;
+h1{
+    text-align:center;
+}
+body{
+    background:
+    url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80)
+}
+.button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

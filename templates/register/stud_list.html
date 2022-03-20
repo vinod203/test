@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<center><h1>{{title }}</h1></center>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<style>
+.btn{
+    position: fixed; /* or position: absolute; */
+    top: 15;
+    right: 10;
+button {
+  border: none;
+  color:red;
+  padding: 10px 32px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+}
+body{
+        background:
+        url(https://images.unsplash.com/photo-1523378759295-3a7b309ca5fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80)
+        }
+table, td, th {
+  border: 3px solid black;
+}
+th{
+background-color:#FF0000
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td {
+  text-align: center;
+
+}
+}
+
+.button {background-color: #4CAF50;} /* Green */
+.btn{
+    position: fixed; /* or position: absolute; */
+    top: 15;
+    right: 10;
+
+}
+</style>
+
+</head>
+<body>
+<center><table>
+    <thead style="background-color:#FF0000">
+      <tr>
+          <td><b>S.No</b></td>
+          <td><b>Student Name</b></td>
+          <td><b>Student Email</b></td>
+          <td><b>Student Address</b></td>
+<!--          <td><b>Student School</b></td>-->
+
+      </tr>
+    </thead>
+    {% for k in list %}
+    <tbody>
+    <tr>
+        <td>{{forloop.counter}}</td>
+       <td>{{k.sname}}</td>
+        <td>{{k.semail}}</td>
+        <td>{{k.saddr}}</td>
+<!--        <td>{{k.ssch}}</td>-->
+        {% endfor %}
+    </tr>
+    </tbody>
+
+<!--<a class="btn btn-primary btn-lg" href="{%url 'home'%}" role="button">back to home</a>-->
+</table>
+
+</center>
+
+<br>
+<div align="top">
+    <a  class="btn btn-primary bt-lg " href="{% url 'home'%}" role="button" >Home</a>
+</div>
+</body>
+</html>

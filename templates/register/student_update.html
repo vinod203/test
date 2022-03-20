@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<center><h1>{{title}}</h1></center>
+<head>
+    <meta charset="UTF-8">
+    <title>Student-Enrolment</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'register/main.css'%}">
+    <style>
+        button {
+  border: none;
+  color:red;
+  padding: 10px 32px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+p{
+font-size:30px
+}
+
+.button {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+ body{
+        background:
+        url(https://images.unsplash.com/photo-1523378759295-3a7b309ca5fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80)
+        }
+        .btn{
+    position: fixed; /* or position: absolute; */
+    top: 15;
+    right: 10;
+
+}
+    </style>
+</head>
+<body>
+<div class="form-group">
+     <center><form method="post">{% csrf_token %}
+         <li> {{form.as_p}}</li>
+<!--                <label for="sname"><b>Student Name:</b></label><br>-->
+<!--                <input type="text" id="sname" name="sname" required><br>-->
+<!--                 <label for="saddr"><b>Student Adderss:</b></label><br>-->
+<!--                <input type="text" id="saddr" name="saddr" required><br>-->
+<!--                <label for="sdep"><b>Student Dep:</b></label><br>-->
+<!--                <input type="text" id="sdep" name="sdep" required><br>-->
+<!--                <label for="ssch"><b>Student School:</b></label><br>-->
+<!--                <input type="text" id="ssch" name="ssch" required><br>-->
+
+                <button class="button btn-primary">Update</button>
+
+
+            </form>
+     </center>
+    </div>
+</body>
+</html>

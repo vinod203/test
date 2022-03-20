@@ -1,0 +1,30 @@
+{%load crispy_forms_tags%}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div class="content-section">
+
+    <form action="" method="post">{%csrf_token%}
+         <fieldset class="form-group">
+        <legend class="border-bottm "> Login</legend>
+           {{form|crispy}}
+    </fieldset>
+        <br>
+
+    <button class="btn btn-outline-info" type="submit">Login</button>
+    </form>
+     <div>
+        <small class="text_muted">
+            Need an account ? <a href="{%url 'register'%}"> Sign Up</a>
+        </small>
+    </div>
+</div>
+
+
+
+</body>
+</html>

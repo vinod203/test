@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+       body{
+        background:
+        url(https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{%static 'register/main.css'%}">
+</head>
+<body>
+<div class="navbar-nav">
+<!--                {%if user.is_authenticated%}-->
+<!--                    <a class="nav-item nav-link" href="{%url 'logout' %}">Logout</a>-->
+<!--                    <a class="nav-item nav-link" href="{%url 'profile' %}">profile</a>-->
+<!--                {%else%}-->
+<!--                  <a class="nav-item nav-link" href="{%url 'login' %}">Login</a>-->
+<!--                  <a class="nav-item nav-link" href="{%url 'register'%}">Register</a>-->
+<!--                {%endif%}-->
+<!--            </div>-->
+
+      <div class="container" align="center">
+      <div class="jumbotron">
+        <h1>Welcome to Student Enroll System</h1><br><br>
+        <a class="btn btn-primary btn-lg" href="/stud-reg" role="button">Register</a>&nbsp;&nbsp;
+<!--        <a class="btn btn-primary btn-lg" href="/stud-update" role="button">Update</a>&nbsp;&nbsp;-->
+        <a class="btn btn-primary btn-lg" href="/stud-delete" role="button">Delete</a>&nbsp;&nbsp;
+        <a class="btn btn-primary btn-lg" href="/stud-search" role="button">Search</a>&nbsp;&nbsp;
+        <a class="btn btn-primary btn-lg" href="/stud-all" role="button">All</a>&nbsp;&nbsp;
+      </div>
+      </div>
+</body>
+</html>
